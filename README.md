@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL here](https://your-solution-url.com)
-- [Live site URL here](https://your-live-site-url.com)
+- [Live site URL here](https://NitheeshKumar-C.github.io/notifications-page/)
 
 ## My process
 
