@@ -1,0 +1,163 @@
+// ### Primary
+
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+
+// ### Neutral
+
+$White: hsl(0, 0%, 100%);
+$VeryLightGrayishBlue: hsl(210, 60%, 98%);
+$LightGrayishBlue1: hsl(211, 68%, 94%);
+$LightGrayishBlue2: hsl(205, 33%, 90%);
+$GrayishBlue: hsl(219, 14%, 63%);
+$DarkGrayishBlue: hsl(219, 12%, 42%);
+$VeryDarkBlue: hsl(224, 21%, 14%);
+
+// ## Typography
+
+// ### Body Copy
+
+$FontSizePara: 16px;
+
+// ### Font
+
+$fontFamily: 'Plus Jakarta Sans', sans-serif;
+$fontWeights:("500":500,"800":800);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+main{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: $VeryLightGrayishBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chat-body{
+    background-color: $White;
+    // min-height: 90%;
+    max-width: 45%;
+    box-shadow: 4px 4px 15px 0px rgba(97, 97, 97, 0.209);
+    border-radius: 10px;
+    padding: 25px 20px;
+
+    .chat-header{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        div{
+            display: flex;
+            h1{
+                margin-right: 10px;
+                font-size: 20px;
+            }
+            span{
+                background-color: $Blue;
+                color: $White;
+                font-size: 15px;
+                padding: 2px 5px;
+                border-radius: 5px;
+                font-weight: map-get($fontWeights, "800");
+            }
+        }
+        .markAsRead{
+            font-size: 15px;
+            color: $DarkGrayishBlue;
+            font-size: $FontSizePara;
+        }
+        .markAsRead:hover{
+            color: $Blue;
+            cursor: pointer;
+        }
+    }
+}
+//
+.chat-container{
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: $VeryLightGrayishBlue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    align-items: flex-start;
+    img{
+        // min-height: 100%;
+        max-width: 7%;
+        margin-right: 15px;
+    }
+    .chat-container-d1{
+       max-width: fit;
+    }
+    .chat-container-d2{
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        font-size: 15px;
+        div{
+            color: $GrayishBlue;
+            margin: 2px 0;
+        }
+        .user{
+            color: black;
+            font-weight: map-get($fontWeights, "800");
+        }
+        .time{
+            color: $GrayishBlue;
+        }
+        .action{
+            color: $DarkGrayishBlue;
+            font-weight: map-get($fontWeights, "800");
+        }
+        .dot{
+            margin-left: 5px;
+            display: inline-block;
+            min-width: 10px;
+            background-color: $Red;
+            min-height: 10px;
+            border-radius: 50%;
+        }
+        a:hover{
+            color: $Blue;
+            cursor: pointer;
+        }
+        .message{
+            color: $DarkGrayishBlue;
+            margin-top: 10px;
+            font-size: 15px;
+            border: 1px solid $LightGrayishBlue1;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+    }
+    .chess-img{
+        margin-left: 50px;
+        display: inline;
+        position: absolute;
+        right: 0;
+        img{
+            float: right;
+            min-width: 50px;
+            margin: 0;
+        }
+    }
+}
+.read{
+    background-color: $White;
+}
+
+.attribution{
+    margin-top: 3%;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}

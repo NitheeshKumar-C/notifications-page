@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(210deg, 60%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-body {
+  background-color: hsl(0deg, 0%, 100%);
+  max-width: 45%;
+  box-shadow: 4px 4px 15px 0px rgba(97, 97, 97, 0.209);
+  border-radius: 10px;
+  padding: 25px 20px;
+}
+.chat-body .chat-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.chat-body .chat-header div {
+  display: flex;
+}
+.chat-body .chat-header div h1 {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.chat-body .chat-header div span {
+  background-color: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 15px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+.chat-body .chat-header .markAsRead {
+  font-size: 15px;
+  color: hsl(219deg, 12%, 42%);
+  font-size: 16px;
+}
+.chat-body .chat-header .markAsRead:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+
+.chat-container {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  background-color: hsl(210deg, 60%, 98%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+.chat-container img {
+  max-width: 7%;
+  margin-right: 15px;
+}
+.chat-container .chat-container-d1 {
+  max-width: fit;
+}
+.chat-container .chat-container-d2 {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  font-size: 15px;
+}
+.chat-container .chat-container-d2 div {
+  color: hsl(219deg, 14%, 63%);
+  margin: 2px 0;
+}
+.chat-container .chat-container-d2 .user {
+  color: black;
+  font-weight: 800;
+}
+.chat-container .chat-container-d2 .time {
+  color: hsl(219deg, 14%, 63%);
+}
+.chat-container .chat-container-d2 .action {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: 800;
+}
+.chat-container .chat-container-d2 .dot {
+  margin-left: 5px;
+  display: inline-block;
+  min-width: 10px;
+  background-color: hsl(1deg, 90%, 64%);
+  min-height: 10px;
+  border-radius: 50%;
+}
+.chat-container .chat-container-d2 a:hover {
+  color: hsl(219deg, 85%, 26%);
+  cursor: pointer;
+}
+.chat-container .chat-container-d2 .message {
+  color: hsl(219deg, 12%, 42%);
+  margin-top: 10px;
+  font-size: 15px;
+  border: 1px solid hsl(211deg, 68%, 94%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+.chat-container .chess-img {
+  margin-left: 50px;
+  display: inline;
+  position: absolute;
+  right: 0;
+}
+.chat-container .chess-img img {
+  float: right;
+  min-width: 50px;
+  margin: 0;
+}
+
+.read {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.attribution {
+  margin-top: 3%;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+}/*# sourceMappingURL=style.css.map */
